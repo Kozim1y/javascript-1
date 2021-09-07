@@ -1,0 +1,200 @@
+.elips
+{
+  width: 500px;
+  height: 500px;
+  background-color: #212F3C;
+  border-radius: 50%;
+  position: absolute;
+  left: -200px;
+  top: -100px;
+  box-shadow: 5px 5px 200px #000000;
+}
+
+.elips1
+{
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  background-color: #212F3C;
+  box-shadow: 10px 10px 200px #000000;
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+		from {
+				transform: rotate(0deg);
+		}
+		to {
+				transform: rotate(359deg);
+		}
+}
+
+.elips2
+{
+  width: 600px;
+  height: 600px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  right: -150px;
+  bottom:  -150px;
+  background-color: #212F3C;
+  box-shadow: 10px 10px 200px #000000;
+}
+ 
+
+form
+{
+  max-width: 550px;
+  height: 600px;
+  background-color: rgba(9, 0, 170, 0.3);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  position: relative;
+  z-index: 1;
+  padding-top: 20px;
+  text-align: center;
+
+  input{
+    display: block;
+    width: 400px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    outline: none;
+    font-size: 25px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 3px solid rgba(0, 187, 255, 0.5);
+    background-color: rgba(0, 8, 230, 0.2);
+    color: rgb(237, 237, 237);
+  }
+
+}
+
+
+.button {
+  background-color: rgb(0, 4, 121);
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+}
+
+.button:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+  transform: scale(1.2);
+}
+
+.button:active
+{
+  transform: scale(1);
+}
+
+.button span {
+  position: absolute;
+  display: block;
+}
+
+.button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
